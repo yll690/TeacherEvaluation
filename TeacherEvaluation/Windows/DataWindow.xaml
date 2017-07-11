@@ -1,0 +1,46 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TeacherEvaluation"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="TeacherEvaluation.DataWindow"
+        mc:Ignorable="d"
+        Title="查看评分统计" Height="600" Width="1000" MinHeight="200" MinWidth="600">
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <GroupBox Header="选择要查询的类型" Margin="5" Padding="5">
+            <StackPanel Orientation="Horizontal">
+                <RadioButton Name="rankRB" Content="评分排名表" IsChecked="True" Checked="rankRB_Checked"/>
+                <RadioButton Name="markRB" Content="详细评分表" Checked="markRB_Checked"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="过滤器" Margin="5" Grid.Row="1" Padding="5">
+            <StackPanel Orientation="Horizontal">
+                <Label Name="instituteL" Content="学院：" Style="{StaticResource labelStyle1}"/>
+                <ComboBox x:Name="instituteCB" SelectedIndex="0" VerticalAlignment="Center" VerticalContentAlignment="Center" SelectionChanged="instituteCB_SelectionChanged" HorizontalAlignment="Left" Width="80" Margin="0,0,10,0">
+                    <System:String>全部</System:String>
+                </ComboBox>
+                <Label Name="teacherL" Content="教师：" Style="{StaticResource labelStyle1}"/>
+                <ComboBox x:Name="teacherCB" SelectedIndex="0" VerticalAlignment="Center" VerticalContentAlignment="Center" SelectionChanged="teacherCB_SelectionChanged" HorizontalAlignment="Left" Width="80" Margin="0,0,10,0">
+                    <System:String>全部</System:String>
+                </ComboBox>
+                <Label Content="课程：" Style="{StaticResource labelStyle2}"/>
+                <ComboBox x:Name="courseCB" SelectedIndex="0" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="80" Margin="0,0,10,0" SelectionChanged="courseCB_SelectionChanged">
+                    <System:String>全部</System:String>
+                </ComboBox>
+                <Label Content="学期：" Style="{StaticResource labelStyle2}"/>
+                <ComboBox x:Name="termCB" SelectedIndex="0" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="80" Margin="0,0,10,0" SelectionChanged="termCB_SelectionChanged">
+                    <System:String>全部</System:String>
+                </ComboBox>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="查询结果" Grid.Row="2" Margin="5" Padding="5">
+            <DataGrid Name="dataGrid" Margin="5" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Grid.Row="1" CanUserAddRows="False" IsSynchronizedWithCurrentItem="False"/>
+        </GroupBox>
+    </Grid>
+</Window>

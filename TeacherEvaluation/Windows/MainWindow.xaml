@@ -1,0 +1,63 @@
+﻿<Window x:Class="TeacherEvaluation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TeacherEvaluation"
+        mc:Ignorable="d"
+        Title="教学评价管理系统" Height="600" Width="800" MinHeight="300" MinWidth="700">
+    <Grid Name="baseGrid" Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="60"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Image Name="headImage" Margin="5"  MouseUp="headImage_MouseUp" ToolTip="点击以展开菜单" Cursor="Hand">
+            <Image.ContextMenu>
+                <ContextMenu Name="mainMenu">
+                    <MenuItem Name="myRankMI" Header="查看我的整体排名" Click="myRankMI_Click" />
+                    <MenuItem Name="markStatMI" Header="评分结果统计" Click="markStatMI_Click" />
+                    <MenuItem Name="thisTermMI" Header="查看此学期所有授课记录" Click="thisTermMI_Click"/>
+                    <MenuItem Name="getTeacherBytIDMI" Header="根据教师号查询教师" ToolTip="此次查询会忽略学期和授课对象的限制" Click="getTeacherBytIDMI_Click"/>
+                    <MenuItem Name="getCourseBycIDMI" Header="根据课程号查询课程" ToolTip="此次查询会忽略学期和授课对象的限制" Click="getCourseBycIDMI_Click"/>
+                    <MenuItem Name="changePWMI" Header="修改密码" Click="changePWMI_Click"/>
+                    <MenuItem Name="settingsMI" Header="设置" Click="settingsMI_Click"/>
+                    <MenuItem Name="closeMI" Header="关闭" Click="closeMI_Click"/>
+                </ContextMenu>
+            </Image.ContextMenu>
+        </Image>
+        <ScrollViewer Margin="0,5,0,0" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+            <StackPanel Name="mainSP" Margin="5"></StackPanel>
+        </ScrollViewer>
+        <Grid Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Horizontal" Margin="10,2,0,2">
+                <Grid Margin="10,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <Label Content="选择学期:" Grid.Row="0" VerticalAlignment="Center" VerticalContentAlignment="Center" Padding="5" HorizontalAlignment="Left"/>
+                    <ComboBox Name="termsCB" Grid.Row="0" HorizontalAlignment="Left" Margin="65,5,0,5" VerticalAlignment="Center" Width="70" VerticalContentAlignment="Center" SelectedIndex="0" SelectionChanged="termsCB_SelectionChanged"/>
+                    <CheckBox Name="onlyOwnTeacherCB" Grid.Row="1" Content="只显示自己的老师" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="5,0,0,0" Padding="5" HorizontalAlignment="Left"/>
+                </Grid>
+                <Button x:Name="thisTermB" Content="查看此学期我的教师" Style="{StaticResource buttonStyle1}" Click="thisTermB_Click"/>
+                <Button Name="refreshB" Content="刷新" Style="{StaticResource buttonStyle1}" Click="refreshB_Click" />
+            </StackPanel>
+            <StackPanel Grid.Column="1" Orientation="Horizontal" Margin="0,10,10,10">
+                <ComboBox Name="searchOptionCB" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Center" Width="65" SelectedIndex="0" VerticalContentAlignment="Center">
+                    <ComboBoxItem Content="搜教师"/>
+                    <ComboBoxItem Content="搜课程"/>
+                </ComboBox>
+                <TextBox Name="searchTB" Style="{StaticResource TextBoxStyle1}" Width="120"/>
+                <Button Name="searchB" Content="搜索" ToolTip="在这里搜索会忽略学期和授课对象的限制" Style="{StaticResource buttonStyle1}" Click="searchB_Click"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

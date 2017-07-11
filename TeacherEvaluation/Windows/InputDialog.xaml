@@ -1,0 +1,19 @@
+﻿<Window x:Class="TeacherEvaluation.InputDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TeacherEvaluation"
+        mc:Ignorable="d"
+        Title="请输入内容" MinHeight="100" MinWidth="300" Height="200" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <TextBox Name="inputTB" Margin="5" Padding="3" TextWrapping="Wrap" AcceptsReturn="True" TextChanged="inputTB_TextChanged"/>
+        <Button Name="OKB" Content="确认" Grid.Row="1" Width="70" Height="25" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="-100,7,0,7" IsDefault="True" Click="OKB_Click"/>
+        <Button Name="cancelB" Content="取消" Grid.Row="1" Width="70" Height="25" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="100,7,0,7" Click="cancelB_Click"/>
+        <Label Name="lengthL" Content="0/1000" HorizontalAlignment="Right" Margin="0" Grid.Row="1" VerticalAlignment="Top" HorizontalContentAlignment="Right"/>
+    </Grid>
+</Window>

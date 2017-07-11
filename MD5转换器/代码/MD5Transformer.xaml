@@ -1,0 +1,33 @@
+﻿<Window x:Class="TeacherEvaluationTools.MD5Transformer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TeacherEvaluationTools"
+        mc:Ignorable="d"
+        Title="MD5Transformer" Height="300" Width="300">
+    <Grid Margin="3">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <GroupBox>
+            <GroupBox.Header>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="输出  "/>
+                    <Button Name="pasteB" Content="粘贴" HorizontalAlignment="Center" VerticalAlignment="Center" Click="pasteB_Click"/>
+                </StackPanel>
+            </GroupBox.Header>
+            <TextBox Name="inputTB" TextWrapping="Wrap" Margin="5" Padding="3" TextChanged="inputTB_TextChanged"/>
+        </GroupBox>
+        <GroupBox Grid.Row="1">
+            <GroupBox.Header>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="输出  "/>
+                    <Button Name="copyB" Content="复制" HorizontalAlignment="Center" VerticalAlignment="Center" Click="copyB_Click"/>
+                </StackPanel>
+            </GroupBox.Header>
+            <TextBox Name="outputTB" Margin="5" Padding="3" IsReadOnly="True"/>
+        </GroupBox>
+    </Grid>
+</Window>

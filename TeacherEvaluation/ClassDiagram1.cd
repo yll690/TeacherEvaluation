@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TeacherEvaluation.App" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAEABAAAAAQAAAAEAAAABAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeacherEvaluation.CourseClickedEventArgs" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>EventArgs\CourseClickedEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeacherEvaluation.TeacherClickedEventArgs" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EventArgs\TeacherClickedEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeacherEvaluation.Comment" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAjBIQAAgCAAAAAAAAgAgAAACIAAAAgBAAAAAQAAQQ=</HashCode>
+      <FileName>OtherClasses\Comment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeacherEvaluation.DetailedMark" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAIAAAAAAAAAQAAAAEAAAAEAgAAJEIAACBAAA=</HashCode>
+      <FileName>OtherClasses\DetailedMark.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeacherEvaluation.Identity" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAgAEAAIABAAAA=</HashCode>
+      <FileName>OtherClasses\Identity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeacherEvaluation.SqlHelper">
+    <Position X="9.25" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAgIAASACMARCUKgEBIiAAAxACCkEEAQUEOBASCoMAE=</HashCode>
+      <FileName>OtherClasses\SqlHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeacherEvaluation.StaticStuff" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAACIAAAAAACAAAAAAgAAQIAAQAAAA=</HashCode>
+      <FileName>OtherClasses\staticStuff.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeacherEvaluation.Student" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAgAAAAIAAAQAAAAEAAgQAAAIEAAAABAAAAAQCAAA=</HashCode>
+      <FileName>OtherClasses\Student.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeacherEvaluation.Teacher" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAwAAAAIAAAAAAAAAACAQEAAgEEABAABCAAAAEgAA=</HashCode>
+      <FileName>OtherClasses\Teacher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeacherEvaluation.Teaching" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAGAAAAgAAAAAAAAAAAAAAAkBAAQAAQAEACAAAAFgAA=</HashCode>
+      <FileName>OtherClasses\Teaching.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeacherEvaluation.CommentUC" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAEAAAAAAAAAAQAAAAAAAEBAAAA=</HashCode>
+      <FileName>UserControls\CommentUC.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TeacherEvaluation.TeacherDetailUC" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAEAAIAAAAAgGEAEIBAgAAAAAAAAJAAAABAFAA=</HashCode>
+      <FileName>UserControls\TeacherDetailUC.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TeacherEvaluation.TeachingUC" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAQAAAAAAAGAgAEAELBAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>UserControls\TeachingUC.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TeacherEvaluation.ChangePassword" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACBAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Windows\ChangePassword.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TeacherEvaluation.DataWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAQAAAABQAAAAABAUAAABABCgQAEAEAAAAAABABAA=</HashCode>
+      <FileName>Windows\DataWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TeacherEvaluation.GradeWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAABAgAAAAAAAAEACAAAAAgAA=</HashCode>
+      <FileName>Windows\GradeWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TeacherEvaluation.InputDialog" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAACABAEAAAAgAAAAABAAAAAQAAAEAAA=</HashCode>
+      <FileName>Windows\InputDialog.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TeacherEvaluation.Login" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAQAAAAAACAABAAABAIACAAAABAEAAEABAAAA=</HashCode>
+      <FileName>Windows\Login.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TeacherEvaluation.LoginOption" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAEAAAAAggAACAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Windows\LoginOption.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TeacherEvaluation.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAABQAAggAAIEUwgAEJEgBAACAAAAAAAAIAAABAaAA=</HashCode>
+      <FileName>Windows\MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TeacherEvaluation.SettingWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAABAAAAABgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Windows\SettingWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TeacherEvaluation.Properties.Resources" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeacherEvaluation.Properties.Settings" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAABAAAAAIRGAAAABAAAAAAAAAEAIAAY=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="TeacherEvaluation.Rank" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgBAAAQAAAAAAACAAACAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>OtherClasses\Rank.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="TeacherEvaluation.IdentityEnum" Collapsed="true">
+    <Position X="0.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAEAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>OtherClasses\enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TeacherEvaluation.SexEnum" Collapsed="true">
+    <Position X="2.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>OtherClasses\enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

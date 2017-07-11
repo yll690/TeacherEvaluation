@@ -1,0 +1,36 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TeacherEvaluation.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="server" Type="System.String" Scope="User">
+      <Value Profile="(Default)">AKIBAYASHI</Value>
+    </Setting>
+    <Setting Name="database" Type="System.String" Scope="User">
+      <Value Profile="(Default)">TeacherEvaluation</Value>
+    </Setting>
+    <Setting Name="studentUN" Type="System.String" Scope="User">
+      <Value Profile="(Default)">TE_student</Value>
+    </Setting>
+    <Setting Name="studentPW" Type="System.String" Scope="User">
+      <Value Profile="(Default)">student</Value>
+    </Setting>
+    <Setting Name="teacherUN" Type="System.String" Scope="User">
+      <Value Profile="(Default)">TE_teacher</Value>
+    </Setting>
+    <Setting Name="teacherPW" Type="System.String" Scope="User">
+      <Value Profile="(Default)">teacher</Value>
+    </Setting>
+    <Setting Name="managerUN" Type="System.String" Scope="User">
+      <Value Profile="(Default)">TE_manager</Value>
+    </Setting>
+    <Setting Name="managerPW" Type="System.String" Scope="User">
+      <Value Profile="(Default)">manager</Value>
+    </Setting>
+    <Setting Name="lastIdentity" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="username" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1030415615</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

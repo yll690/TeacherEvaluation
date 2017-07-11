@@ -1,0 +1,77 @@
+﻿<UserControl x:Class="TeacherEvaluation.TeacherDetailUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TeacherEvaluation"
+             mc:Ignorable="d" 
+             MinHeight="400" MinWidth="600" d:DesignWidth="600">
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="34"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Name="teacherInfoG" MinHeight="200">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="170"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image Name="picture" Width="150" Height="150" Margin="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            <Label Name="nameL" Content="教师姓名" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,8" Padding="0" FontWeight="Bold" HorizontalContentAlignment="Center" FontSize="18"/>
+            <TextBlock Name="profileTB" Grid.Column="1" Margin="10,30,10,10" Text="教师简介显示在这里" ScrollViewer.VerticalScrollBarVisibility="Auto" TextWrapping="Wrap"/>
+            <Label Content="教师简介:" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Left" VerticalContentAlignment="Center" Margin="0,5,0,0"/>
+        </Grid>
+        <Grid Grid.Row="1" Margin="5">
+            <Label x:Name="courseNameL" Content="当前课程：" Grid.Column="1" VerticalAlignment="Center" Padding="0" VerticalContentAlignment="Center" Margin="10,5" HorizontalAlignment="Left"/>
+            <Label x:Name="rankAndMarkL" Grid.Column="1" Content="查看排名和详细分数" Margin="10,5" HorizontalAlignment="Right" VerticalAlignment="Center" Padding="0" Cursor="Hand" MouseLeftButtonUp="rankAndMarkL_MouseLeftButtonUp" VerticalContentAlignment="Center"/>
+        </Grid>
+        <Grid Grid.Row="2" HorizontalAlignment="Center" Margin="22,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="70"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="90"/>
+            </Grid.ColumnDefinitions>
+            <Button Content="添加评分" Name="gradeB" Grid.Column="2" HorizontalAlignment="Center" Margin="0,-35,0,0" VerticalAlignment="Center" Padding="15,5" Click="gradeB_Click"/>
+            <Button Content="添加评论" Name="commentB" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,35,0,0" Padding="15,5" Click="commentB_Click" />
+            <Ellipse Margin="5" Fill="#FF449EF8"/>
+            <Label Name="markL" Content="9.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="32" FontStyle="Italic" Foreground="White"/>
+            <Grid Grid.Column="1" Margin="5,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="300"/>
+                    <ColumnDefinition Width="40"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Label Content="8-10分" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="5,4,0,4.5" Padding="0"/>
+                <Label Content="5-8分" Grid.Row="1" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="5,4.5,0,5" Padding="0"/>
+                <Label Content="0-5分" Grid.Row="2" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="5,5,0,4.5" Padding="0"/>
+                <Rectangle Name="percent1R" Width="300" Grid.Column="1" Height="16" VerticalAlignment="Center" Fill="#FF6AAFEB" HorizontalAlignment="Left"/>
+                <Label Name="percent1L" Content="80%" Grid.Column="2" Padding="0" VerticalContentAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                <Rectangle Name="percent2R" Width="300" Grid.Column="1" Grid.Row="1" Height="16" VerticalAlignment="Center" Fill="#FF6AAFEB" HorizontalAlignment="Left"/>
+                <Label Name="percent2L" Content="80%" Grid.Row="1" Grid.Column="2" Padding="0" VerticalContentAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                <Rectangle Name="percent3R" Width="300" Grid.Column="1" Grid.Row="2" Height="16" VerticalAlignment="Center" Fill="#FF6AAFEB" HorizontalAlignment="Left"/>
+                <Label Name="percent3L" Content="80%" Grid.Row="2" Grid.Column="2" Padding="0" VerticalContentAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+
+            </Grid>
+        </Grid>
+        <StackPanel Grid.Row="3" Orientation="Horizontal" Margin="10">
+            <RadioButton Content="显示所有评论" Name="allComRB" HorizontalAlignment="Left" Checked="allComRB_Checked"/>
+            <RadioButton Content="只显示本课程评论" Name="courseComRB" HorizontalAlignment="Left" Checked="courseComRB_Checked"/>
+        </StackPanel>
+        <StackPanel Name="commentSP" Grid.Row="4" Margin="10">
+        </StackPanel>
+        <Popup Name="popup" StaysOpen="False" Placement="Mouse" Grid.RowSpan="2">
+            <Border BorderBrush="Gray" BorderThickness="1" Background="LightYellow">
+                <Label Name="popupL" Content=""/>
+            </Border>
+        </Popup>
+    </Grid>
+</UserControl>

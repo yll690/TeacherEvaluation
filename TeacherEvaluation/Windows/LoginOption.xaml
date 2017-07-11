@@ -1,0 +1,46 @@
+﻿<Window x:Class="TeacherEvaluation.LoginOption"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TeacherEvaluation"
+        mc:Ignorable="d"
+        Title="登录设置" Height="350" Width="300" ResizeMode="NoResize" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="服务器名" Grid.Row="0" Style="{StaticResource labelStyle1}"/>
+        <Label Content="数据库名" Grid.Row="1" Style="{StaticResource labelStyle1}"/>
+        <Label Content="学生登录名" Grid.Row="2" Style="{StaticResource labelStyle1}"/>
+        <Label Content="学生密码" Grid.Row="3" Style="{StaticResource labelStyle1}"/>
+        <Label Content="教师登录名" Grid.Row="4" Style="{StaticResource labelStyle1}"/>
+        <Label Content="教师密码" Grid.Row="5" Style="{StaticResource labelStyle1}"/>
+        <Label Content="督导登录名" Grid.Row="6" Style="{StaticResource labelStyle1}"/>
+        <Label Content="督导密码" Grid.Row="7" Style="{StaticResource labelStyle1}"/>
+
+        <TextBox Name="serverNameTB" Grid.Row="0" Grid.Column="1" Style="{StaticResource TextBoxStyle1}"/>
+        <TextBox Name="DBNameTB" Grid.Row="1" Grid.Column="1" Style="{StaticResource TextBoxStyle1}"/>
+        <TextBox Name="studentUNTB" Grid.Row="2" Grid.Column="1" Style="{StaticResource TextBoxStyle1}"/>
+        <TextBox Name="teacherUNTB" Grid.Row="4" Grid.Column="1" Style="{StaticResource TextBoxStyle1}"/>
+        <TextBox Name="managerUNTB" Grid.Row="6" Grid.Column="1" Style="{StaticResource TextBoxStyle1}"/>
+        <PasswordBox Name="studentPWPB" Grid.Row="3" Grid.Column="1" Style="{StaticResource passwordBoxStyle1}"/>
+        <PasswordBox Name="teacherPWPB" Grid.Row="5" Grid.Column="1" Style="{StaticResource passwordBoxStyle1}"/>
+        <PasswordBox Name="managerPWPB" Grid.Row="7" Grid.Column="1" Style="{StaticResource passwordBoxStyle1}"/>
+
+        <Button Name="saveB" Content="保存" Grid.Row="8" Grid.ColumnSpan="2" Height="25" Width="70" Margin="-100,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Click="saveB_Click" />
+        <Button Name="cancelB" Content="取消" Grid.Row="8" Grid.ColumnSpan="2" Height="25" Width="70" Margin="100,0,0,0" Click="cancelB_Click"/>
+    </Grid>
+</Window>
